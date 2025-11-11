@@ -1,0 +1,48 @@
+.main-holder-login{
+    width:100%;
+    height:100vh;
+    padding:30px;
+}
+.login-container{
+    width:100%;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px
+}
+.login-container div input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border:1px solid black;
+    color:black
+}
+.login-container div p{
+    font-size: 20px;
+    margin-top: 10px
+}
+
+.login-container div{
+    width: 80%;
+    /*margin-left: 10%;*/ 
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.login-button{
+    width:40%;
+    height:40px;
+        border:none;
+        border-radius: 10px;
+        margin-top: 50px;
+        background: black;
+        color:white;
+        transition: 0.3s ease-in-out
+}
+
+.login-button:hover{
+    transform: scale(1.1);
+}

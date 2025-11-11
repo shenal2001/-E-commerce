@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+    </head>
+    <body onload="loadProductFeatures();">
+
+        <div class="col-12 p-5"><a href="index.html">BackTo Home</a></div>
+        <div class="col-12 d-flex flex-column  align-items-center">
+            <h5>Filter What you want to Search here</h5>
+            <div class="col-12 row mt-4">
+                <div class="col-3">
+                    <select class="col-3 form-select" onchange="searchProducts()" id="categorySelect">
+                        <option>Select Category</option>
+                    </select>
+                </div>
+                
+                  <div class="col-3">
+                      <select class="col-3 form-select" onchange="searchProducts();" id="brandSelect">
+                        <option>Select Brand</option>
+                    </select>
+                </div>
+                
+                  <div class="col-3">
+                      <select class="col-3 form-select" onchange="searchProducts();" id="subCategorySelect">
+                        <option>Select Type</option>
+                    </select>
+                </div>
+                
+                 <div class="col-3">
+                     <select class="col-3 form-select" onchange="searchProducts();" id="sizeSelect">
+                        <option>Select Size</option>
+                    </select>
+                </div>
+                
+            </div>
+           
+            <div class="col-8 mt-5 vh-25 row" style="grid-template-columns: repeat(3, 1fr);" id="searchItems" >
+
+                <div class="col-lg-3 col-12 mt-2 row ms-2" id="searchItem">
+                    <div id="holder" style="width: 18rem;">
+                        <div class="col-12 text-center">
+                            <p id="product"></p>
+                            <img class="rounded" style="width:200px;" id="image"/>
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black-50" id="title"></h5>
+                            <h5 class="card-title" id="brand"></h5>
+                            <p class="card-text" id="sub_category"></p>
+                            <p class="card-text" id="price"></p>
+
+                            <a id="button"></a>
+                        </div>
+                    </div>
+                </div>
+
+<!--                <div class="col-lg-3 col-12 mt-2 row ms-2">
+                    <div class="card" style="width: 18rem;">
+                        <div class="col-12 text-center">
+
+                            <img src="asserts/images/WhatsApp Image 2024-09-12 at 14.10.27_96fdd9d1.jpg" class="rounded" style="width:200px;" />
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black-50">Men's Red Polo T-shirt</h5>
+                            <h5 class="card-title">Brand : Nike</h5>
+                            <p class="card-text">Category : Men's Polo T-shirt</p>
+                            <p class="card-text">Color : Red</p>
+
+                            <a href="enrollClass.php" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-12 mt-2 row ms-2">
+                    <div class="card" style="width: 18rem;">
+                        <div class="col-12 text-center">
+
+                            <img src="asserts/images/WhatsApp Image 2024-09-12 at 14.10.27_96fdd9d1.jpg" class="rounded" style="width:200px;" />
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black-50">Men's Red Polo T-shirt</h5>
+                            <h5 class="card-title">Brand : Nike</h5>
+                            <p class="card-text">Category : Men's Polo T-shirt</p>
+                            <p class="card-text">Color : Red</p>
+
+                            <a href="enrollClass.php" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-12 mt-2 row ms-2">
+                    <div class="card" style="width: 18rem;">
+                        <div class="col-12 text-center">
+
+                            <img src="asserts/images/WhatsApp Image 2024-09-12 at 14.10.27_96fdd9d1.jpg" class="rounded" style="width:200px;" />
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black-50">Men's Red Polo T-shirt</h5>
+                            <h5 class="card-title">Brand : Nike</h5>
+                            <p class="card-text">Category : Men's Polo T-shirt</p>
+                            <p class="card-text">Color : Red</p>
+
+                            <a href="enrollClass.php" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-12 mt-2 row ms-2">
+                    <div class="card" style="width: 18rem;">
+                        <div class="col-12 text-center">
+
+                            <img src="asserts/images/WhatsApp Image 2024-09-12 at 14.10.27_96fdd9d1.jpg" class="rounded" style="width:200px;" />
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black-50">Men's Red Polo T-shirt</h5>
+                            <h5 class="card-title">Brand : Nike</h5>
+                            <p class="card-text">Category : Men's Polo T-shirt</p>
+                            <p class="card-text">Color : Red</p>
+
+                            <a href="enrollClass.php" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>-->
+
+
+
+            </div>
+        </div>
+
+        <script src="js/search.js"></script>
+        <script src="js/addProductFeatures.js"></script>
+
+    </body>
+</html>

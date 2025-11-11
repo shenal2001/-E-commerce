@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+
+        <div class="col-12">
+            <div class="VerificationHolder">
+                <div class="verificationLeft d-lg-block d-none">
+                    <h5 class="p-5">Sandy Fashion House, Verify Your Account</h5>
+                </div>
+                <div class="verificationRight col-lg-6 col-12">
+                    <h5 id="message" class="text-danger"></h5>
+                    <h5>
+                        Please Enter Your Registered Email Here
+                    </h5>
+                    <input type="text" id="email"/>
+                    <br/>
+                    <h5>
+                        Please Enter Your Verification Code Here
+                    </h5>
+                    <input type="text" id="verifyUser"/>
+                    <button onclick="verifyUser();">Verify</button>
+                    <a href="login.html">Already Verified? Back To Login</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/verifyUser.js"></script>
+    </body>
+</html>

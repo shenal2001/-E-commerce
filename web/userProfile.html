@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/userProfile.css"/>
+    </head>
+    <body onload="loadUserFeatures();">
+        <div id="welcome" class="col-12">
+            <div class="nav-bar">
+                <div class="left-navigationbar">
+                    <div class="ms-2">Image</div>
+                   <div class="ms-5 fw-bold fs-5"><a href="index.html" style="text-decoration: none;color: white">Sandy Fashion House</a></div>
+                </div>
+
+                <div class="d-flex flex-row top-menubar d-lg-block d-none">
+                    <a  href="addProduct.html">Become A Seller</a>
+                    <a href="index.html">Back To Home</a>
+                    <a href="logout">Logout</a>
+
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="mainBody">
+                    <div class="col-8 offset-2 leftMainHolder">
+                        <img src="asserts/images/WhatsApp Image 2024-09-12 at 14.10.27_96fdd9d1.jpg" class="profileImage"/>
+                        <button class="btn btn-primary col-6 offset-3">Upload An Image</button>
+                     
+                        <p>Name : </p>
+                        <input type="text" value="Praveen Feernando" />
+                        
+                        <p>Mobile : </p>
+                        <input type="text" value="0764165971"/>
+                        
+                        <p>Address : </p>
+                        <input type="text" value="No 191 A Nadeebadawatta, Paratta, Panadura"/>
+                        
+                         <p>Email : </p>
+                         <input type="text" value="wkapraveen@gmail.com"/>
+                        
+                         <p>Status : </p>
+                         <input type="text" value="Verified"/>
+                        <button onclick="abc();" class="btn btn-success mt-5 mb-5 col-6 offset-3">Update My Profile</button>
+                    
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="js/userProfile.js"></script>
+    </body>
+</html>

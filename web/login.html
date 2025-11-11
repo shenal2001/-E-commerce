@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/loginStyles.css"/>
+    </head>
+    <body>
+
+        <div class="main-holder-login">
+            <div>
+                <a href="index.html">Back To Home</a>
+                <h3 style="color:black">Welcome to Sandy Fashion House</h3>
+                <p>Please Enter Your Login Details Here</p>
+            </div>
+            <div class="login-container">
+                <div class="w-100">
+                    <p style="color:red;margin: 10px" id="warningLogin"></p>
+                </div>
+                <div>
+                    <p style="color: black">Email</p>
+                    <input type="text" id="email"/>
+                </div>
+
+
+                <div>
+                    <p style="color: black">Password</p>
+                    <input type="password" id="password"/>
+                </div>
+
+                <button class="login-button" onclick="signIn();">Sign In</button>      
+                <a href="signup.html" style="text-decoration: none;display: flex;align-items: center;justify-content: center" class="login-button" onclick="signIn();" >New User? Sign Up</a>
+
+            </div>
+        </div>
+
+        <script src="js/signIn.js"></script>
+    </body>
+</html>

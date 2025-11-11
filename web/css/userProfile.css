@@ -1,0 +1,71 @@
+*{
+    color:black;
+}
+
+.main-container{
+    width: "100%";
+    margin:0;
+    padding:0
+}
+.nav-bar{
+    background-color:black;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.left-navigationbar{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchBar{
+    display: flex;
+}
+.searchBar input{
+    width: 300px;
+    border: none;
+    border-radius: 8px;
+    height:40px;
+    padding: 10px;
+    margin-left: 300px
+}
+.top-menubar{
+    padding-right: 50px;
+}
+.top-menubar a{
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+.top-menubar a:hover{
+    text-decoration: underline;
+}
+.profileImage{
+    width: 300px;
+    border-radius: 10%;
+    margin: 20px
+}
+.leftMainHolder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainBody{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    flex-direction: row
+}
+
+.leftMainHolder input{
+    border-radius: 10px
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/signupStyles.css"/>
+    </head>
+    <body>
+        <div class="col-12 p-3">
+            <div class="w-100">
+                <div>
+                    back to home
+                </div>
+                <h2>Welcome to Sandy Fashion House</h2>
+                <p>Please Enter Your Details Here</p>
+            </div>
+
+            <div class="w-100">
+                <div class="mainContainer">
+                    <div>
+                        <p>First Name : </p>
+                        <input type="text" id="first_name" />
+                    </div>
+                    <div>
+                        <p>Last Name : </p>
+                        <input type="text" id="last_name" />
+                    </div>
+
+                    <div>
+                        <p>Email : </p>
+                        <input type="text" id="email" />
+                    </div>
+
+                    <div>
+                        <p>Password : </p>
+                        <input type="password" id="password" />
+                    </div>
+
+                    <div class="buttonHolder">
+
+                        <button onclick="signup();">Register</button>
+                        <br/>
+                        <a href="login.html">Already have an Account? <u>Login</u></a>
+                    </div>
+                    <br/>
+                    <div>
+                        <p style="color:red" id="errorMessageSignUp"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="js/signup.js"></script>
+    </body>
+</html>

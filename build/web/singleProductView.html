@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/singleProductView.css"/>
+    </head>
+    <body onload="loadProduct();">
+        <div class="nav-bar">
+            <div class="left-navigationbar">
+                <div class="ms-2">Image</div>
+                <div class="ms-5 fw-bold fs-5"><a href="index.html" style="text-decoration: none;color: white">Sandy Fashion House</a></div>
+            </div>
+
+            <div class="searchBar d-lg-block d-none"><a href="search.html"><input type="text" placeholder="Search" /></a></div>
+            <div class="d-flex flex-row top-menubar d-lg-block d-none">
+                <a  href="cart.html">Cart</a>
+                <a href="login.html">Login</a>
+                <a href="userProfile.html">Profile</a>
+
+            </div>
+        </div>
+        <div class="col-12 row">
+            <div class="slider-container col-4">
+                <div class="slider">
+                    <div class="slide active">
+                        <img id="img1" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img id="img2" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img id="img3" alt="Image 3">
+                    </div>
+                </div>
+                <button class="prev rounded" style=" background-color: rgba(0, 0, 0, 0.1);color:black" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next rounded"  style=" background-color: rgba(0, 0, 0, 0.1);color:black"  onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="col-lg-6 col-12 pt-2 d-flex justify-content-center flex-column ps-5">
+                <h1 id="name"></h1>
+                <h3 id="brand"></h3>
+                <p id="category" class="card-text fs-4"></p>
+                <p id="size" class="card-text fs-4"></p>            
+                <p id="color" class="card-text fs-4"></p>                                    
+                                
+                <p id="price" class="card-text fs-4">Price : Rs.1200.00</p>
+                <br/>
+                <p id="quantity" class="card-text">13 items in stock</p>
+                
+                <div class="d-flex">
+                <label>Quantity : </label>
+                <input type="number" id="addedQty" value="0" style="width: 50px" class="mb-5"/>
+                </div>
+                
+                <div class="col-12 row">
+                    <button class="btn btn-dark ms-2 col-4" id="productToCart">Add To Cart</button>
+                    <a class="btn btn-dark ms-2 col-4" id="checkout">Checkout</a>
+
+                </div>
+                <br/>
+                <p>Description : description</p>
+            </div>
+
+        </div>
+
+        <script src="js/singleProductView.js"></script>
+    </body>
+</html>
